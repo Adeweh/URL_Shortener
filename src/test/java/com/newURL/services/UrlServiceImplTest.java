@@ -1,6 +1,8 @@
 package com.newURL.services;
 
+import com.newURL.dtos.requests.RetrieveLinkRequest;
 import com.newURL.dtos.requests.ShortenUrlRequest;
+import com.newURL.dtos.responses.RetrieveLinkResponse;
 import com.newURL.dtos.responses.ShortenUrlResponse;
 import com.newURL.exceptions.InvalidURLException;
 import org.junit.jupiter.api.BeforeEach;
@@ -30,5 +32,19 @@ class UrlServiceImplTest {
         ShortenUrlResponse response = urlService.shortenLink(request);
         assertEquals(1, urlService.size());
         assertEquals("https://newURL.com/a", response.getLink());
+    }
+
+    @Test
+    void testThatShortURLCanRetrieveLongURL() throws InvalidURLException {
+        request.setLink("https://stackoverflow.com/questions/28920705/intellij-doesnt-work-correctly-with-cloning-project-from-github");
+        ShortenUrlResponse response = urlService.shortenLink(request);
+
+        RetrieveLinkRequest request1 = new RetrieveLinkRequest();
+        request1.setConvertedURL(response.getLink());
+        RetrieveLinkResponse response1 = urlService.getURL(request1);
+
+        assertEquals("https://stackoverflow.com/questions/28920705/intellij-doesnt-work-correctly-with-cloning-project-from-github", response1.getConvertedURL());
+
+
     }
 }
