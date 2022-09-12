@@ -52,7 +52,7 @@ public class UrlServiceImpl implements UrlService {
         String id = String.valueOf(getRequestID(request.getConvertedURL()));
 
         RetrieveLinkResponse response = new RetrieveLinkResponse();
-        response.setConvertedURL(urlRepository.findAllById(id).getLink());
+        response.setConvertedURL(urlRepository.findUrlLinkById(id).getLink());
 
         return response;
     }
