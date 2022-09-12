@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e08bed19-790e-4e4d-b52a-2b74920f78e6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newURL/UrlMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newURL/controllers/UrlController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newURL/data/models/UrlLink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newURL/data/repositories/UrlRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newURL/dtos/requests/RetrieveLinkRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newURL/dtos/requests/ShortenUrlRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newURL/dtos/responses/RetrieveLinkResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newURL/dtos/responses/ShortenUrlResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newURL/exceptions/InvalidURLException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newURL/exceptions/UrlShortenerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newURL/services/UrlService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newURL/services/UrlServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newURL/utils/IdConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/newURL/services/UrlServiceImplTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2EVKtmwNR5aKy7vhQ5D1Wx1I01a" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_directory_selection": "/home/adeh/Documents/URL_Shortener/src/main/java/com/newURL",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.newURL.services" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UrlMain">
+    <configuration name="UrlServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="URL_Shortener" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.newURL.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.newURL.services" />
+      <option name="MAIN_CLASS_NAME" value="com.newURL.services.UrlServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UrlServiceImplTest.a" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="URL_Shortener" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.newURL.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.newURL.services" />
+      <option name="MAIN_CLASS_NAME" value="com.newURL.services.UrlServiceImplTest" />
+      <option name="METHOD_NAME" value="a" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UrlServiceImplTest.addURL_returnShortenUrlLink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="URL_Shortener" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.newURL.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.newURL.services" />
+      <option name="MAIN_CLASS_NAME" value="com.newURL.services.UrlServiceImplTest" />
+      <option name="METHOD_NAME" value="addURL_returnShortenUrlLink" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UrlServiceTest.addURL_returnShortenUrlLink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="URL_Shortener" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.newURL.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.newURL.services" />
+      <option name="MAIN_CLASS_NAME" value="com.newURL.services.UrlServiceTest" />
+      <option name="METHOD_NAME" value="addURL_returnShortenUrlLink" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UrlMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="URL_Shortener" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.newURL.UrlMain" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.newURL.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.UrlMain" />
+        <item itemvalue="JUnit.UrlServiceImplTest" />
+        <item itemvalue="JUnit.UrlServiceImplTest.addURL_returnShortenUrlLink" />
+        <item itemvalue="JUnit.UrlServiceImplTest.a" />
+        <item itemvalue="JUnit.UrlServiceTest.addURL_returnShortenUrlLink" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e08bed19-790e-4e4d-b52a-2b74920f78e6" name="Changes" comment="" />
+      <created>1662675532815</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662675532815</updated>
+      <workItem from="1662675535276" duration="22193000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
