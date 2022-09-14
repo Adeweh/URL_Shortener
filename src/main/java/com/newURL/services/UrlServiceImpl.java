@@ -28,7 +28,7 @@ public class UrlServiceImpl implements UrlService {
 
         String subDir = getSubDirectory(newLink.getId());
         ShortenUrlResponse response = new ShortenUrlResponse();
-        response.setLink("https://newURL.com/" + subDir);
+        response.setLink("localhost:8080/" + subDir);
         return response;
 
 
@@ -47,9 +47,8 @@ public class UrlServiceImpl implements UrlService {
     }
 
     @Override
-    public RetrieveLinkResponse getURL(RetrieveLinkRequest request) throws InvalidURLException {
-        isValidURL(request.getConvertedURL());
-        String id = String.valueOf(getRequestID(request.getConvertedURL()));
+    public RetrieveLinkResponse getURL(String request) {
+        String id = String.valueOf(getRequestID(request));
 
         RetrieveLinkResponse response = new RetrieveLinkResponse();
         response.setConvertedURL(urlRepository.findUrlLinkById(id).getLink());

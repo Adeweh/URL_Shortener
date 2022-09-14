@@ -41,7 +41,7 @@ class UrlServiceImplTest {
         request.setLink("https://stackoverflow.com/questions/28920705/intellij-doesnt-work-correctly-with-cloning-project-from-github");
         ShortenUrlResponse response = urlService.shortenLink(request);
         assertEquals(1, urlService.size());
-        assertEquals("https://newURL.com/a", response.getLink());
+        assertEquals("localhost:8080/a", response.getLink());
     }
 
     @Test
@@ -51,7 +51,8 @@ class UrlServiceImplTest {
 
         RetrieveLinkRequest request1 = new RetrieveLinkRequest();
         request1.setConvertedURL(response.getLink());
-        RetrieveLinkResponse response1 = urlService.getURL(request1);
+
+        RetrieveLinkResponse response1 = urlService.getURL(request1.getConvertedURL());
 
         assertEquals("https://stackoverflow.com/questions/28920705/intellij-doesnt-work-correctly-with-cloning-project-from-github", response1.getConvertedURL());
 

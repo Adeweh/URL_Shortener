@@ -5,12 +5,12 @@ import com.newURL.dtos.requests.ShortenUrlRequest;
 import com.newURL.exceptions.InvalidURLException;
 import com.newURL.services.UrlService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.net.URI;
 
 @RestController
 public class UrlController {
@@ -27,13 +27,9 @@ public class UrlController {
     }
 
     @GetMapping("/getlong")
-    public ResponseEntity<?> getLongURL(@RequestBody RetrieveLinkRequest getURLRequest) {
-        try {
-            return new ResponseEntity<>(urlService.getURL(getURLRequest), HttpStatus.CREATED);
-        } catch (InvalidURLException ex) {
-            return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
-        }
+    public ResponseEntity<Void> getLongURL(@PathVariable String getURLRequest) {
+        HttpHeaders headers = new HttpHeaders();
+        headers.setLocation(URI.create(urlService.getURL(getURLRequest).getConvertedURL()));
+        return new ResponseEntity<>(headers, HttpStatus.MOVED_PERMANENTLY);
     }
-
-
 }

@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public interface UrlService {
     ShortenUrlResponse shortenLink(ShortenUrlRequest request) throws InvalidURLException;
 
-    RetrieveLinkResponse getURL(RetrieveLinkRequest request) throws InvalidURLException;
+    RetrieveLinkResponse getURL(String request);
 
 
     long size();
