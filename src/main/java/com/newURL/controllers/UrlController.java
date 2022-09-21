@@ -1,7 +1,6 @@
 package com.newURL.controllers;
 
-import com.newURL.dtos.requests.RetrieveLinkRequest;
-import com.newURL.dtos.requests.ShortenUrlRequest;
+import com.newURL.dtos.responses.requests.ShortenUrlRequest;
 import com.newURL.exceptions.InvalidURLException;
 import com.newURL.services.UrlService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +25,7 @@ public class UrlController {
         }
     }
 
-    @GetMapping("/getlong")
+    @GetMapping("/{getURL}")
     public ResponseEntity<Void> getLongURL(@PathVariable String getURLRequest) {
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(URI.create(urlService.getURL(getURLRequest).getConvertedURL()));

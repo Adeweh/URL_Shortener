@@ -1,4 +1,4 @@
-package com.newURL.dtos.requests;
+package com.newURL.dtos.responses.requests;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

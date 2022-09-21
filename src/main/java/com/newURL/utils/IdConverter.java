@@ -7,20 +7,23 @@ public class IdConverter {
     private static final String allowedString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
     private static char [] allowedCharacters = allowedString.toCharArray();
-    private static final List<Integer> remainderList = new ArrayList<>();
+    private static final List<Long> remainderList = new ArrayList<>();
 
-    public static String convertKey(int key) {
-        if (key < 62) return String.valueOf(allowedCharacters[key]);
+    public static String convertKey(long key) {
+        if (key < 62) {
+            long request = key;
+            return String.valueOf(allowedCharacters[(int) request]);
+        }
 
-        int newDivide = key;
+        long newDivide = key;
         while (newDivide != 0) {
             remainderList.add(0, newDivide % 62);
             newDivide /= 62;
         }
 
         StringBuilder convertedKey = new StringBuilder();
-        for (Integer remainder : remainderList) {
-            convertedKey.append(allowedCharacters[remainder]);
+        for (long remainder : remainderList) {
+            convertedKey.append(allowedCharacters[(int) remainder]);
         }
         remainderList.clear();
         return convertedKey.toString();

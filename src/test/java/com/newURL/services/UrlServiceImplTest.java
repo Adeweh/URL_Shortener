@@ -1,8 +1,8 @@
 package com.newURL.services;
 
 import com.newURL.data.repositories.UrlRepository;
-import com.newURL.dtos.requests.RetrieveLinkRequest;
-import com.newURL.dtos.requests.ShortenUrlRequest;
+import com.newURL.dtos.responses.requests.RetrieveLinkRequest;
+import com.newURL.dtos.responses.requests.ShortenUrlRequest;
 import com.newURL.dtos.responses.RetrieveLinkResponse;
 import com.newURL.dtos.responses.ShortenUrlResponse;
 import com.newURL.exceptions.InvalidURLException;
@@ -41,7 +41,7 @@ class UrlServiceImplTest {
         request.setLink("https://stackoverflow.com/questions/28920705/intellij-doesnt-work-correctly-with-cloning-project-from-github");
         ShortenUrlResponse response = urlService.shortenLink(request);
         assertEquals(1, urlService.size());
-        assertEquals("localhost:8080/a", response.getLink());
+        assertEquals("https://www.mynewURL.com/a", response.getLink());
     }
 
     @Test
